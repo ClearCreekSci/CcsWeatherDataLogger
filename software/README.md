@@ -1,4 +1,6 @@
-# WeatherStation Software
+<-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
+
+# Weather Data Logger Software
 
 The Clear Creek Scientific (CCS) weather station requires the CCS Bluetooth GATT service software to be installed on the Raspberry Pi Zero before connecting to the weather station on your Android phone.
 
@@ -6,7 +8,7 @@ The Clear Creek Scientific (CCS) weather station requires the CCS Bluetooth GATT
 
 Installing the GATT service software requires the following:
 
-* The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [install an operating system on the Raspberry Pi](https://github.com/ClearCreekSci/WeatherStation/tree/main/electronics/#setting-up-the-raspberry-pi).
+* The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [set up the Raspberry Pi](https://github.com/ClearCreekSci/WeatherStation/tree/main/electronics/#setting-up-the-raspberry-pi).
 * You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed. If your computer doesn't have SSH client software, install it as described below:
 
 ### Installing SSH on Windows
@@ -145,3 +147,4 @@ Either from the keyboard connected to the Raspberry Pi, or over SSH from the ins
 
 `sudo reboot`
 
+<-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
