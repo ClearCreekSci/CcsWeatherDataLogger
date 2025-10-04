@@ -1,6 +1,6 @@
 # Clear Creek Scientific Weather Data Logger
 
-This project provides the resources you need to obtain parts for and create a do-it-yourself (DIY) weather data logger which records air temperature, humidity and barometric pressure. To download the files in the project, click the `<> Code` button on the project page and then select "Download ZIP", or use `git clone` with the other links. Included software and documentation are licensed under the Creative Commons 1.0 Universal license, allowing you to use and modify your weather data logger as you please, subject to local laws.
+This project provides the resources you need to obtain parts for and create a do-it-yourself (DIY) weather data logger which records air temperature, humidity and barometric pressure. To download the files in the project, click the `<> Code` button on the project page and then select "Download ZIP", or use `git clone` with one of the provided links. Included software and documentation are licensed under the Creative Commons 1.0 Universal license, allowing you to use and modify your weather data logger as you please, subject to local laws.
 
 The following resources are provided in the various folders of this project.
 
