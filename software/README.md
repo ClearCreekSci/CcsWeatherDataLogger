@@ -6,7 +6,7 @@ The Clear Creek Scientific (CCS) weather station requires the CCS Bluetooth GATT
 
 ## Requirements
 
-Installing the GATT service software requires the following:
+Installing the weather data logger software requires the following:
 
 * The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [set up the Raspberry Pi](https://github.com/ClearCreekSci/WeatherStation/tree/main/electronics/#setting-up-the-raspberry-pi).
 * You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed. If your computer doesn't have SSH client software, install it as described below:
@@ -83,7 +83,9 @@ Use some version of scp (secure copy) to move files from the installation comput
 
 #### Copying Files Using macOS
 
-TODO:
+* On the installation computer, open a command prompt and navigate to the directory where you downloaded the weather station software. Change to the "software" directory. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace <IP address for Pi>` with the IP address you noted above. After running each command, you will be asked for the password for the Raspberry Pi.
+  * `scp install_WeatherStation.sh pi@<IP address for PI>:/home/<username for Pi>`
+  * `scp v1.0.0_WeatherStation_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
 
 #### Copying Files Using Linux
 
