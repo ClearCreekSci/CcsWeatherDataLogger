@@ -1,6 +1,6 @@
 # Clear Creek Scientific Weather Data Logger
 
-This project provides the resources you need to obtain parts for and create a do-it-yourself (DIY) weather station which records air temperature, humidity and barometric pressure. Included software and documentation are licensed under the Creative Commons 1.0 Universal license, allowing you to use and modify your weather station as you please, subject to local laws.
+This project provides the resources you need to obtain parts for and create a do-it-yourself (DIY) weather station which records air temperature, humidity and barometric pressure. Included software and documentation are licensed under the Creative Commons 1.0 Universal license, allowing you to use and modify your weather data logger as you please, subject to local laws.
 
 The following resources are provided in the various folders of this project.
 
