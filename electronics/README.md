@@ -7,4 +7,4 @@ This document contains information for obtaining, configuring and connecting the
 * [Wiring Diagram](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/WeatherDataLoggerWiringDiagram)
 
 
-<-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main)
+<-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
