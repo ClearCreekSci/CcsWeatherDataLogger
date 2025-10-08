@@ -16,10 +16,10 @@ Installing the weather data logger software requires the following:
 
 Please click the link below to install to your operating system of choice:
 
-[Using Windows](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingWindows)
-[Using macOS](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingmacOS)
-[Using Debian or Ubuntu](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingDebian)
-[Using another Linux Distribution](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingLinux)
+* [Using Windows](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingWindows)
+* [Using macOS](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingmacOS)
+* [Using Debian or Ubuntu](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingDebian)
+* [Using another Linux Distribution](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingLinux)
 
 
 <-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
