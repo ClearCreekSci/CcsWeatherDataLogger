@@ -16,7 +16,7 @@ Installing the weather data logger software requires the following:
 
 Please click the link below to install to your operating system of choice:
 
-[Using Windows](install_weather_data_logger_software_windows)
+[Using Windows](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingWindows)
 
 If your computer doesn't have SSH client software, install it as described below:
 
