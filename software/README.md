@@ -12,7 +12,13 @@ The Clear Creek Scientific (CCS) Weather Data Logger software is intended to run
 Installing the weather data logger software requires the following:
 
 * The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [set up the Raspberry Pi](https://github.com/ClearCreekSci/WikiBase/wiki/wiki-setup-raspberry-pi-zero-for-weatherlogger)).
-* You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed. If your computer doesn't have SSH client software, install it as described below:
+* You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed.
+
+Please click the link below to install to your operating system of choice:
+
+[Using Windows](install_weather_data_logger_software_windows)
+
+If your computer doesn't have SSH client software, install it as described below:
 
 ### Installing SSH on Windows
 
@@ -78,6 +84,8 @@ Use some version of scp (secure copy) to move files from the installation comput
 * On the installation computer, open a command prompt and navigate to the folder where you downloaded the weather station software. Change to the "software" folder. Use pscp.exe to copy the following files to the your Raspberry Pi user's home directory. You will need to know the directory where PuTTY is installed. This example assumes the default installation directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace `<IP address for Pi>` with the IP address you recorded when setting up the Raspberry Pi. After running each command, you will be asked for the password for the Raspberry Pi. 
   * `"C:\Program Files\PuTTY\pscp.exe" install_CcsWeatherDataLogger.sh <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
   * `"C:\Program Files\PuTTY\pscp.exe" v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
+  * `"C:\Program Files\PuTTY\pscp.exe" install_CcsWeatherDataServer.sh <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
+  * `"C:\Program Files\PuTTY\pscp.exe" v1.0.0_CcsWeatherDataServer_Install_Bundle.zip <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
 
 
 ##### Copying Files Using WSL on Windows
@@ -85,6 +93,8 @@ Use some version of scp (secure copy) to move files from the installation comput
 * On the installation computer, open a command prompt and navigate to the folder where you downloaded the weather station software. Change to the "software" folder. Run the command: `wsl`. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace `<IP address for Pi>` with the IP address you recorded when setting up the Raspberry Pi. After running each command, you will be asked for the password for the Raspberry Pi.
   * `scp install_CcsWeatherDataLogger.sh <username for Pi>@<IP address for PI>:/home/<username for Pi>`
   * `scp v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip <username for Pi>@<IP address for PI:/home/<username for Pi>`
+* `scp install_CcsWeatherDataServer.sh <username for Pi>@<IP address for PI>:/home/<username for Pi>`
+  * `scp v1.0.0_CcsWeatherDataServer_Install_Bundle.zip <username for Pi>@<IP address for PI:/home/<username for Pi>`
 
 
 
@@ -93,12 +103,16 @@ Use some version of scp (secure copy) to move files from the installation comput
 * On the installation computer, open a terminal and navigate to the directory where you downloaded the weather station software. Change to the "software" directory. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace `<IP address for Pi>` with the IP address you recorded when setting up the Raspberry Pi. After running each command, you will be asked for the password for the Raspberry Pi.
   * `scp install_CcsWeatherDataLogger.sh pi@<IP address for PI>:/home/<username for Pi>`
   * `scp v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
+  * `scp install_CcsWeatherDataServer.sh pi@<IP address for PI>:/home/<username for Pi>`
+  * `scp v1.0.0_CcsWeatherDataServer_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
 
 #### Copying Files Using Linux
 
 * On the installation computer, open a command prompt and navigate to the directory where you downloaded the weather station software. Change to the "software" directory. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace `<IP address for Pi>` with the IP address you recorded when setting up the Raspberry Pi. After running each command, you will be asked for the password for the Raspberry Pi.
   * `scp install_CcsWeatherDataLogger.sh pi@<IP address for PI>:/home/<username for Pi>`
   * `scp v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
+  * `scp install_CcsWeatherDataServer.sh pi@<IP address for PI>:/home/<username for Pi>`
+  * `scp v1.0.0_CcsWeatherDataServer_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
 
 
 ## Running the Installation Script
@@ -107,20 +121,22 @@ The last step is to run the installation script on the Raspberry Pi which will c
 
 ### Using a Keyboard and Monitor Connected to the Raspberry Pi
 
-If you have a keyboard and monitor connected to the Raspberry Pi, navigate to your user's home directory and run the following:
+If you have a keyboard and monitor connected to the Raspberry Pi, navigate to your user's home directory and run the following, one after the other:
 
-`sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+* `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+* `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataServer_Install_Bundle.zip`
 
-After the script runs, you should see a message indicating successful installation.
+After each script runs, you should see a message indicating successful installation.
 
 
 #### Using SSH with PuTTY on Windows
 
 Start PuTTY by clicking on the PuTTY icon. In the dialog box that appears, type the IP address of the Raspberry Pi in the box named "Host Name (or IP address)". Click the "Open" button. When asked to login, use the credentials that you previously configured for the Raspberry Pi. In the terminal window that appears, type the following:
 
-`sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+* `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+* `sudo install_CcsWeatherDataServer.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
 
-After the script runs, you should see a message indicating successful installation.
+After the each script runs, you should see a message indicating successful installation.
 
 
 #### Using SSH with WSL on Windows
@@ -131,8 +147,9 @@ After the script runs, you should see a message indicating successful installati
   * `ssh <username for Pi>@<IP address for PI>`
 * Once connected to the Raspberry Pi, run the install script as root, passing the install bundle as a parameter:
   * `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+  * `sudo install_CcsWeatherDataServer.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
 
-After the script runs, you should see a message indicating successful installation.
+After each script runs, you should see a message indicating successful installation.
  
 
 ### Using SSH from macOS
@@ -141,8 +158,9 @@ After the script runs, you should see a message indicating successful installati
   * `ssh <username for Pi>@<IP address for PI>`
 * Once connected to the Raspberry Pi, run the install script as root, passing the install bundle as a parameter:
   * `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+  * `sudo install_CcsWeatherDataServer.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
 
-After the script runs, you should see a message indicating successful installation.
+After each script runs, you should see a message indicating successful installation.
 
 
 ### Using SSH from Linux
@@ -151,8 +169,9 @@ After the script runs, you should see a message indicating successful installati
   * `ssh <username for Pi>@<IP address for PI>`
 * Once connected to the Raspberry Pi, run the install script as root, passing the install bundle as a parameter:
   * `sudo install_CcsWeatherDataLogger.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
+  * `sudo install_CcsWeatherDataServer.sh v1.0.0_CcsWeatherDataLogger_Install_Bundle.zip`
 
-After the script runs, you should see a message indicating successful installation.
+After each script runs, you should see a message indicating successful installation.
 
 
 ## Rebooting the Raspberry Pi
