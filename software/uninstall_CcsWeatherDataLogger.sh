@@ -3,6 +3,11 @@ VENV_DST="${TOPLEVEL_DST}/venv_weatherdatalogger"
 WEATHERDATALOGGER_DST="${TOPLEVEL_DST}/WeatherDataLogger"
 SYSTEMD_SERVICE_DST="/etc/systemd/system"
 
+if [ ! $EUID -eq 0 ]; then
+    echo "Please run this install script as root"
+    exit
+fi
+
 echo "Removing ccsweatherdatalogger systemd service..."
 systemctl stop ccsweatherdatalogger.service
 systemctl disable ccsweatherdatalogger.service

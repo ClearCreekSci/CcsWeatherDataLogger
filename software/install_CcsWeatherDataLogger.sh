@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 UNZIP_DST="./unzip"
 TOPLEVEL_DST="/opt/ccs"
-VENV_DST="${TOPLEVEL_DST}/venv_weatherdatalogger"
-VENV_LIB_DIR="${VENV_DST}/lib"
+#VENV_DST="${TOPLEVEL_DST}/venv_weatherdatalogger"
+#VENV_LIB_DIR="${VENV_DST}/lib"
 SITE_DIR="site-packages"
 WEATHERDATALOGGER_DST="${TOPLEVEL_DST}/WeatherDataLogger"
 SYSTEMD_SERVICE_DST="/etc/systemd/system"
@@ -34,28 +34,16 @@ mkdir ${UNZIP_DST}
 
 unzip -q -d ${UNZIP_DST} $1
 
-# Setup up the virtual environment first...
-mkdir -p "${TOPLEVEL_DST}" 
-
-echo "Creating Python virtual environment at ${VENV_DST}. This may take some time..."
-python -m venv "${VENV_DST}"
-
-echo "Installing required Python packages..."
-source "${VENV_DST}/bin/activate"
-pip install -r "${UNZIP_DST}/requirements.txt"
-
-for entry in "${VENV_LIB_DIR}"/*
-do
-    PYTHON_VER=`basename "${entry}"`
-done
-
 # Setup up the WeatherDataLogger files...
+mkdir -p "${TOPLEVEL_DST}" 
 mkdir -p "${WEATHERDATALOGGER_DST}"
+mkdir -p "${WEATHERDATALOGGER_DST}/data"
 
 echo "Copying Weather Data Logger files..."
 cp "${UNZIP_DST}/data_logger.py" "${WEATHERDATALOGGER_DST}"
+cp "${UNZIP_DST}/manifest.xml" "${WEATHERDATALOGGER_DST}"
 cp -r  "${UNZIP_DST}/plugins" "${WEATHERDATALOGGER_DST}"
-cp -r  "${UNZIP_DST}/manifest.xml" "${WEATHERDATALOGGER_DST}"
+cp -r  "${UNZIP_DST}/ccs_dlconfig" "${WEATHERDATALOGGER_DST}"
 cp "${UNZIP_DST}/system/ccsweatherdatalogger.service" "${SYSTEMD_SERVICE_DST}"
 
 echo "Creating ccsweatherdatalogger systemd service..."
@@ -67,6 +55,6 @@ systemctl start ccsweatherdatalogger.service
 
 rm -rf ${UNZIP_DST}
 
-echo "Installation completed succesfully. Please reboot the device"
+echo "Installation completed succesfully."
 
 
