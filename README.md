@@ -8,5 +8,5 @@ The following resources are provided in the various folders of this project.
 * [software](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/software)
 * [enclosure](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/enclosure)
 
-We suggest you start with the electronics link, purchasing the equipment listed in the bill of materials. Once your components have arrived, you should then install and test the software before wiring the electronic components together and creating an enclosure for them. Once assembled, the weather station data can be read using a web browser on any device connected to the same IP subnet.
+We suggest you start with the electronics link, purchasing the equipment listed in the bill of materials. Once your components have arrived, you should then install and test the software before wiring the electronic components together and creating an enclosure for them. Once assembled, the weather data can be read using a web browser on any device connected to the same IP subnet.
 
