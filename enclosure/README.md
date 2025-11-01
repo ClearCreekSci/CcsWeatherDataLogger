@@ -1,3 +1,9 @@
+<-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
+
+These files can be used to 3D print an enclosure to protect the electronics in your weather data logger. There are two options for the bottom of the enclosure and two options for the top of the enclosure. The bottom half with "feet" is meant to help attach the weather data logger to a flat wooden surface with small screws. Use the top with no header cutouts if you plan to solder wires directly to the two boards in the data logger. Use the top _with_ header cutouts if you are attaching the electronics using either the Qwiic connector or separate jumper wires.
+
+Note that the measurements for the models are in millimeters.
+
 | | |
 |-|-|
 |![ccs_dl0001_enc_bottom](https://github.com/user-attachments/assets/1cd0d5c8-ea6c-4971-8375-e409ade5e054)|ccs_dl0001_enc_bottom|
