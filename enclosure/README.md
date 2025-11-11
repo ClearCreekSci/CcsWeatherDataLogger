@@ -4,6 +4,8 @@ These files can be used to 3D print an enclosure to protect the electronics in y
 
 Note that the measurements for the models are in millimeters.
 
+When pressed together, the top and bottom pieces of the enclosure will stay together due to frictional forces, but the bond is not strong. We suggest using two small wood screws in the holes left in the enclosure wall to hold the two parts together. [These screws from Hobby Lobby](https://www.hobbylobby.com/crafts-hobbies/wood-crafts-blank-surfaces/accessories-hardware-tools/brass-plated-mini-screws---8mm/p/23929) are a little short, but will do the job if you inset the heads by enlarging the existing holes a little with a 5/32 inch drill bit.
+
 | | |
 |-|-|
 |![ccs_dl0001_enc_bottom](https://github.com/user-attachments/assets/1cd0d5c8-ea6c-4971-8375-e409ade5e054)|ccs_dl0001_enc_bottom|
