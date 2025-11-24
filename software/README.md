@@ -14,6 +14,8 @@ Installing the weather data logger software requires the following:
 * The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [set up the Raspberry Pi](https://github.com/ClearCreekSci/WikiBase/wiki/wiki-setup-raspberry-pi-zero-for-weatherlogger)).
 * You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed.
 
+#Installation Instructions
+
 Please click the link below to install to your operating system of choice:
 
 * [Using Windows](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingWindows)
