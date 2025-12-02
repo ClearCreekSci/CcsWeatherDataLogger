@@ -41,7 +41,17 @@ echo "Installing required Python packages..."
 source "${VENV_DST}/bin/activate"
 pip install pip --upgrade
 pip install pip setuptools wheel
-pip install "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_armv6l.whl"
+
+UN=`uname -a`
+if [[ $UN == *"armv6l"* ]]; then
+    pip install "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_armv6l.whl"
+fi
+
+if [[ $UN == *"armv7l"* ]]; then
+    cp "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_arm6l.whl" "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_arm7l.whl"
+    pip install "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_armv7l.whl"
+fi
+
 pip install -r "${UNZIP_DST}/requirements.txt"
 
 for entry in "${VENV_LIB_DIR}"/*
