@@ -39,12 +39,16 @@ python -m venv "${VENV_DST}"
 
 echo "Installing required Python packages..."
 source "${VENV_DST}/bin/activate"
+pip install pip --upgrade
+pip install pip setuptools wheel
+pip install "${UNZIP_DST}/system/bcrypt-5.0.0-cp313-cp313-linux_armv6l.whl"
 pip install -r "${UNZIP_DST}/requirements.txt"
 
 for entry in "${VENV_LIB_DIR}"/*
 do
     PYTHON_VER=`basename "${entry}"`
 done
+deactivate
 
 # Create these directories in case the server gets installed first 
 mkdir -p "${WEATHERDATALOGGER_DST}"

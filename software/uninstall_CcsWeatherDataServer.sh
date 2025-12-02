@@ -14,6 +14,11 @@ systemctl disable ccsweatherdataserver.service
 systemctl daemon-reload
 rm "${SYSTEMD_SERVICE_DST}/ccsweatherdataserver.service"
 
+echo "Removing Python packages..."
+source "${VENV_DST}/bin/activate"
+python -m pip cache purge
+deactivate
+
 echo "Removing ccsweatherdataserver files"
 rm -rf "${WEATHERDATASERVER_DST}" 
 rm -rf "${VENV_DST}" 
