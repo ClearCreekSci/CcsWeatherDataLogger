@@ -11,16 +11,16 @@ The Clear Creek Scientific (CCS) Weather Data Logger software is intended to run
 
 Installing the weather data logger software requires the following:
 
-* The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, do this: [set up the Raspberry Pi](https://github.com/ClearCreekSci/WikiBase/wiki/wiki-setup-raspberry-pi-zero-for-weatherlogger)).
+* The Raspberry Pi Zero needs to be running the right operating system. If you haven't done so already, install one: 
+  * [For Windows, MacOs or Debian Derivative (including Ubuntu)](https://www.youtube.com/watch?v=iv5RTSQmtjo)
+  * [For other Linux distributions](https://github.com/ClearCreekSci/WikiBase/wiki/wiki-howto-setup-raspberry-pi-zero-linux)).
 * You will need a computer with access to the same network as the Raspberry Pi Zero. We'll call it the installation computer. The installation computer needs to have SSH client software installed.
 
 # Installation Instructions
 
-Please click the link below to install to your operating system of choice:
+Please watch the following video to install the data logger software on the Raspberry Pi:
 
-* [Using Windows](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingWindows)
-* [Using macOS](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingmacOS)
-* [Using Linux](https://github.com/ClearCreekSci/CcsWeatherDataLogger/wiki/InstallWeatherDataLoggerSoftwareUsingLinux)
+* [Software Installation]()
 
 
 <-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
