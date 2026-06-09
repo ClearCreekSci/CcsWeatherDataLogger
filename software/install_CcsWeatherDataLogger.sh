@@ -18,7 +18,6 @@ if [ ! $EUID -eq 0 ]; then
 fi
 
 ping -c 1 google.com > /dev/null 2>&1
-
 if [ $? -ne 0 ]; then
     echo "Unable to connect to internet. Installation failed."
     exit
