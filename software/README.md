@@ -18,6 +18,6 @@ Installing the weather data logger software requires the following:
 
 # Installation Instructions
 
-The easiest way to install the data logger software is to use [Gambezi](https://github.com/ClearCreekSci/gambezi). It will create installation scripts for both the data logging software and the web-based server that lets you view and download data from the Raspberry Pi. Watch the [Youtube video]() to see how it is done. 
+The easiest way to configure and install the data logger software is to use [Gambezi](https://github.com/ClearCreekSci/gambezi). It will create installation scripts for both the data logging software and the web-based server that lets you view and download data from the Raspberry Pi. Watch the [Youtube video]() to see how it is done. 
 
 <-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
