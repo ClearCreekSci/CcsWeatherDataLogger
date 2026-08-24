@@ -2,7 +2,7 @@
 
 This project provides the resources you need to obtain parts for and create a do-it-yourself (DIY) weather data logger which records air temperature, humidity and barometric pressure. To download the files in the project, click the `<> Code` button on the project page and then select "Download ZIP", or use `git clone` with one of the provided links. Included software and documentation are licensed under various open source licenses, allowing you to use and modify your weather data logger as you please, subject to local laws.
 
-The following resources are provided in the various folders of this project.
+The following resources are provided in this project:
 
 * [electronics](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/electronics)
 * [software](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/software)
