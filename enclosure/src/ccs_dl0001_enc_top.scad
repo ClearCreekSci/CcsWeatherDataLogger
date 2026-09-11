@@ -106,6 +106,11 @@ module top_box_with_screw_holes() {
     difference() {
         top_box();
 
+        // Internal via between the two boards
+        translate([0.5*PI_INNER_LENGTH+0.5*WALL_WIDTH,-0.15*PI_INNER_WIDTH,TOP_WALL_HEIGHT]) {
+            cube([WALL_WIDTH+0.2,10,TOP_WALL_HEIGHT+0.2],center=true);
+        }
+
         // Finally,  put a hole in each triangle for a screw
         translate([0.5*PI_OUTER_LENGTH-0.5*WALL_WIDTH,0.5*PI_OUTER_WIDTH-3.25,0.5*TOP_WALL_HEIGHT]) {
             cylinder(h=TOP_WALL_HEIGHT+WALL_WIDTH+0.2,r=1.1,center=true);
