@@ -8,8 +8,8 @@ When pressed together, the top and bottom pieces of the enclosure will stay toge
 
 | | |
 |-|-|
-|![ccs_dl0002_enc_bottom](https://github.com/user-attachments/assets/d8271247-65fe-4535-aab7-e5ccc7488678)|ccs_dl0002_enc_bottom|
-|![ccs_dl0001_enc_top](https://github.com/user-attachments/assets/c9515cc4-9888-4933-8a35-9cd169ffbc44)|ccs_dl0002_enc_top|
+|![ccs_dl0002_enc_top](https://github.com/user-attachments/assets/d8271247-65fe-4535-aab7-e5ccc7488678)|ccs_dl0002_enc_top|
+|![ccs_dl0001_enc_bottom](https://github.com/user-attachments/assets/c9515cc4-9888-4933-8a35-9cd169ffbc44)|ccs_dl0002_enc_bottom|
 
 
 <-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
