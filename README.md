@@ -7,6 +7,7 @@ The following resources are provided in this project:
 * [electronics](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/electronics)
 * [software](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/software)
 * [enclosure](https://github.com/ClearCreekSci/CcsWeatherDataLogger/tree/main/enclosure)
+* [youtube walkthrough](https://youtu.be/E-hM51picxA)
 
 We suggest you start by making sure you have all of the necessary components. Click either of the electronics links above and purchase the equipment listed in the bill of materials. There is also a section named "Raspberry Pi Setup" under the electronics link. Click on that link and make sure you have the necessary equipment listed there. Once you have the necessary components and equipment, you can setup the Raspberry Pi with an operating system, and physically connect the Raspberry Pi and the BME280 sensor as shown in the wiring diagram under the electronics link. 
 
