@@ -1,6 +1,6 @@
 <-- [Back to Weather Data Logger Project](https://github.com/ClearCreekSci/CcsWeatherDataLogger)
 
-These files can be used to 3D print an enclosure to protect the electronics in your weather data logger. The large cutouts are necessary to prevent the heat from the boards from affecting the temperature setting
+These files can be used to 3D print an enclosure to protect the electronics in your weather data logger. The large cutouts are necessary to prevent the heat from the boards from affecting the temperature reading.
 
 Note that the measurements for the models are in millimeters.
 
